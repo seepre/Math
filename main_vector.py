@@ -1,4 +1,4 @@
-from playLA.Vector import Vector
+from heads.Vector import Vector
 
 if __name__ == "__main__":
     vc = Vector([34,55])

@@ -19,3 +19,8 @@ if __name__=="__main__":
     # 矩阵乘向量结果
     # [(1*1 + 3*3), (1*2 + 3 * 4)]
     print("matrix1 dot(vec)={}".format(matrix1.dot(vec)))
+
+    I = Matrix.identity(2) 
+    # A*I = A 
+    print("matrix1.dot(I) = {}".format(matrix1.dot(I)))
+    print("I.dot(matrix1) = {}".format(I.dot(matrix1)))

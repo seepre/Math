@@ -4,6 +4,19 @@ class Matrix:
     def __init__(self, list2d):
         self._values = [row[:] for row in list2d] 
 
+    def T(self):
+        """返回矩阵的转置"""
+        return Matrix([[e for e in self.col_vector(i)] 
+                        for i in range(self.col_num())])
+    
+    @classmethod
+    def identity(cls, n):
+        """返回一个n行n列的单位矩阵"""
+        m = [[0]*n for _ in range(n)]
+        for i in range(n):
+            m[i][i] = 1
+        return cls(m)
+
     def __add__(self, another):
         """矩阵加法"""
         assert self.shape() == another.shape(), \
