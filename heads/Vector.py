@@ -13,6 +13,7 @@ class Vector:
     def norm(self):
         """返回向量的模
             sqrt（）表示开平方
+            sqrt(v1**2 + v2**2 + v3**2)
         """
         return math.sqrt(sum(e**2 for e in self))
 
