@@ -1,5 +1,5 @@
-from playLA.Matrix import Matrix 
-from playLA.Vector import Vector
+from heads.Matrix import Matrix 
+from heads.Vector import Vector
 
 if __name__=="__main__":
     mat = Matrix([[1,2,3,4,5],[2,3,4,5,6]])
