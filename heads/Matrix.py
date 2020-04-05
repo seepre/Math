@@ -96,3 +96,4 @@ class Matrix:
         return "Matrix({})".format(self._values) 
 
     __str__ = __repr__ 
+    __len__ = row_num 
