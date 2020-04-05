@@ -1,5 +1,6 @@
 import math
 from ._globals import EPSILON
+from ._globals import is_zero
 
 class Vector:
     def __init__(self, v_list):
@@ -19,7 +20,7 @@ class Vector:
 
     def normalize(self):
         """返回向量的单位向量"""
-        if self.norm() < EPSILON:
+        if is_zero(self.norm()):
             raise ZeroDivisionError("Normalize error!")
         # 需要实现truediv魔术方法才能使用除法
         return Vector(self._values) / self.norm()
