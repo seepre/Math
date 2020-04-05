@@ -44,6 +44,10 @@ class Vector:
             "Error in adding. Length of vectors must be same."
         return Vector([a - b for a, b in zip(self, another)])
 
+    def underlying_list(self):
+        """返回向量底层列表，是一个引用类型"""
+        return self._values[:]
+
     def __mul__(self, k):
         """向量乘以K"""
         return Vector([k * e for e in self])
