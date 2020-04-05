@@ -5,3 +5,4 @@
   - [矩阵 Matrix](main_matrix.py)
   - [Numpy库矩阵的操作 Numpy Of Matrix](main_numpy_matrix.py)
   - [矩阵变换 Matrix Transformation](main_matrix_transformation.py)
+  - [高斯消元 Gauss Jordan](main_linear_system.py)
