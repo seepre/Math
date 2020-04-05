@@ -1,6 +1,7 @@
 from heads.Matrix import Matrix 
 from heads.Vector import Vector 
 from heads.LinearSystem import LinearSystem 
+from heads.LinearSystem import inv
 
 if __name__=="__main__":
     A  = Matrix([[1, 2, 4], [3, 7, 2], [2, 3, 3]])
@@ -78,3 +79,11 @@ if __name__=="__main__":
         print("No Solution!")
     ls9.echo()
     print()
+
+    print("========================求逆矩阵====================")
+    # 求逆向矩阵
+    A = Matrix([[1, 2], [3, 4]])
+    invA = inv(A)
+    print(invA)
+    print(A.dot(invA)) # 是一个单位矩阵
+    print(invA.dot(A)) # 是一个单位矩阵
